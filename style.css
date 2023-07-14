@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Bender";
+  src: url(fonts/Bender.otf) format(opentype);
+}
+
+@font-face {
+  font-family: "Bender-Italic";
+  src: url(fonts/Bender-Italic.otf) format(opentype);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  /*background-color: #100d37;*/
+  font-family: "Bender";
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+  border-bottom: 1px solid whitesmoke;
+  background-color: #100d37;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.logo img {
+  max-width: 10rem;
+  margin-right: 1rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #352bb6;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
+  height: 25em;
+  background-image: url(images/labs.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 1em auto;
+  color: whitesmoke;
+}
+
+.header h1 {
+  display: relative;
+  font-size: 4em;
+  margin-top: 0.7em;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.281),
+    0 0 1em rgba(0, 0, 255, 0.425), 0 0 0.2em rgba(0, 0, 255, 0.363);
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  background-color: transparent;
+  color: whitesmoke;
+  border: none;
+  font-family: "Bender-Italic";
+}
+
+.mission p {
+  margin-bottom: 6em;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.281),
+    0 0 1em rgba(0, 0, 255, 0.425), 0 0 0.2em rgba(0, 0, 255, 0.363);
+}
+
+#english {
+  display: none;
+}
+
+.mission:hover #latin {
+  display: none;
+}
+
+.mission:hover #english {
+  display: contents;
+}
+
+.about {
+  display: flex;
+  max-width: 1280px;
+  gap: 1.5em;
+  margin: 0 auto;
+}
+
+.about h2 {
+  margin-left: 29.5px;
+  align-self: center;
+}
+
+.about-content {
+  display: flex;
+  margin: 20px 29.5px 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.15rem;
+}
+
+.about-content img {
+  width: 30%;
+  height: auto;
+  margin-left: 1em;
+}
+
+.energy {
+  display: flex;
+  max-width: 1280px;
+  gap: 1.5em;
+  margin: 0 auto;
+}
+
+.energy h2 {
+  margin-right: 29.5px;
+  align-self: center;
+}
+
+.energy-content {
+  display: flex;
+  margin: 20px 29.5px 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.energy-content p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.15rem;
+}
+
+.energy-content img {
+  width: 30%;
+  height: auto;
+  margin-right: 1em;
+}
+
+.energy-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.energy-list li + li {
+  margin: 0.4em 0;
+}
+
+.energy-statement {
+  font-family: "Bender-Italic";
+  margin: 2em auto;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3em;
+  max-width: 50%;
+}
+
+.pharm {
+  display: flex;
+  max-width: 1280px;
+  gap: 1.5em;
+  margin: 0 auto;
+}
+
+.pharm h2 {
+  margin-left: 29.5px;
+  align-self: center;
+}
+
+.pharm-content {
+  display: flex;
+  margin: 20px 29.5px 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.15rem;
+}
+
+.pharm-content img {
+  width: 30%;
+  height: auto;
+  margin-left: 1em;
+}
+
+.weapons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  gap: 1.5em;
+  margin: 0 auto;
+}
+
+#weapons-title {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.weapons img {
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.wep-cap {
+  text-align: center;
+  font-weight: bold;
+}
+
+#labs-title {
+  text-align: center;
+  margin: 2em 0 1em 0;
+}
+
+.labs {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  gap: 1.5em;
+  margin: 0 auto;
+}
+
+.labs p {
+  margin: 0 1em;
+}
+
+.labs img {
+  max-width: 1280px;
+  margin: 0 1em;
+}
+
+.footer {
+  display: flex;
+  height: 3.5em;
+  margin-top: 2em;
+  background-color: #100d37;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #100d37;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #352bb6;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #352bb6;
+  }
+
+  .about-content {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .about-content img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-bottom: 1em;
+    margin-left: 0;
+  }
+
+  .energy-content {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .energy-content img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-bottom: 1em;
+  }
+
+  .energy-statement {
+    font-size: 1em;
+  }
+
+  .pharm-content {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .pharm-content img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-bottom: 1em;
+    margin-left: 0;
+  }
+}
